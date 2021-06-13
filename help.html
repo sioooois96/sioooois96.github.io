@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<style type="text/css">
+	*{
+    	margin:0;
+    	margin-top: 0;
+    	padding:0;
+    	position: relative;
+    	/*border: 1px solid red;*/
+	}
+	body{
+		background-color: white;
+		widows: 1900px;
+		height: 800px;
+		background-repeat: no-repeat;
+	}
+	.small{
+		margin-top: 10px;
+		font-size: 13px;
+		color: gray;
+		font-family: 돋움체;
+	}
+	.big{
+		margin-top: 100px;
+		font-size: 35px;
+		color: black;
+		font-family: 돋움체;
+	}
+	.help{
+		position: relative;
+		display: inline-block;
+		margin-top: 60px;
+		margin-right: 60px;
+		/*border: 1px solid black;*/
+		width: 100%
+		height: 100%
+		-webkit-transition: all 0.4s cubic-bezier(0.5,0.24,0,1);
+		transition: all 0.4s cubic-bezier(.5,.24,0,1);
+	}
+	.help::before{
+		content: '';
+		position: absolute;
+		left: 0px;
+  		bottom:0px;
+  		z-index:-1;
+  		width: 0%;
+  		height:1px;
+  		/*background: #6098FF;
+  		box-shadow: inset 0px 0px 0px #6098FF;*/
+ 		 display: block;
+ 		 -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+ 		 transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+	}
+	.help:hover::before{
+		width:460px;
+		height: 540px;
+	}
+	.help::after{
+		 content: '';
+  		 position: absolute;
+ 		 right: 0px;
+ 		 top:0px;
+ 		 z-index:-1;
+ 		 width: 0%;
+		 height:1px;
+		 /*background: #6098FF;*/
+		 -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+		 transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+	}
+	.help:hover::before{
+		width: 460px;
+		height: 540px;
+	}
+	.help:hover{
+		box-shadow: 25px 10px 40px 0px #333;
+	}
+	.image{
+		position: absolute;
+	}
+	.text{
+		width: 350px;
+		height: 0px;
+		margin-top: 310px;
+		margin-left: 50px;
+		background-size: 350px 220px;
+		background-repeat: no-repeat;
+		background-position: 0px 20px;
+		text-align: center; 
+		position: relative;
+		display: inline-block;
+	}
+	.text_title{
+		padding: 20px 0 20px 0;
+		font-size: 30px;
+		font-family: 돋움체;
+		color: #383838;
+	}
+	p{
+		font-size: 15px;
+		color: gray;
+		font-family: 돋움체;
+		/*margin-top: 30px;*/
+	}
+	.box{
+		border-style: solid;
+		border-width: 2px;
+		margin-top: 40px;
+		padding-top: 10px;
+		width: 200px;
+		height: 30px;
+		margin-left: 70px;
+	}
+	.help:hover .box{
+		background-color: black;
+		color: white;
+		transition: 0.8s;
+	}
+</style>
+<body>
+	<center>
+		<h3 class="big"> OUR INFORMATION </h3>
+		<div class="small"> 음식의 새로운 문화를 선도하는 브랜드가 되도록 노력하겠습니다. </div>
+		<div class="help">
+			<img class="image" src="a11.png" width="460px" height="540px">
+			<div class="text">
+				<h3 class="text_title"> LOCATIONS</h3>
+				<p> 매운맛이 그리울때, 
+				<br>지금 영업중인 엽기떡볶이 매장을 찾아주세요. </p>
+				<div class="box"> READ MORE </div>
+			</div>
+		</div>
+		<div class="help">
+			<img class="image" src="a12.png" width="460px" height="540px">
+			<div class="text">
+				<h3 class="text_title"> FRANCHISE </h3>
+				<p> 동대문 엽기떡볶이와  
+				<br> 함께할 점주 여러분을 찾습니다. </p>
+				<div class="box"> READ MORE </div>
+			</div>
+		</div>
+		<div class="help">
+			<img class="image" src="a13.png" width="460px" height="540px">
+			<div class="text">
+				<h3 class="text_title"> FAQ </h3>
+				<p> 고객님들께서 많이 하시는 질문입니다. 
+				<br> 문의전에 참고 부탁드립니다. </p>
+				<div class="box"> READ MORE </div>
+			</div>
+		</div>		
+	</center>
+</body>
+</html>
