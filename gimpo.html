@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>  
+    <style>
+
+h2{
+    text-align: left;
+    font-size: 18px;
+}
+h1{
+    font-size: 20px;
+}
+h3{	
+	margin-left:100px;
+	font-size: 40px; 
+	text-align: left;
+	color: black;
+	float: center;
+}
+h4{
+	margin-left:100px;
+	font-size: 18px; 
+	text-align: left;
+	color: black;
+}
+h5{
+	margin-left: 100px;
+	text-align: center;
+	float: left;
+	margin-top: 50px;
+}
+h6{
+	text-align: left;
+}
+ .clear{
+    clear:both;
+}
+#logo{
+    margin: 50px;
+}
+
+.menu{
+    width:100px;
+    margin: 50px 45px 15px 45px;
+    padding: 10px;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.down{
+    position: relative;
+    display: inline-block;
+}
+
+.down_content{
+    width:3000px;
+    height:100px;   
+    display: none;
+    z-index: 10;
+    background-color: #ffffff;   
+    position: absolute;
+    left: -1070px;
+}
+
+.down_content a{
+    display: block;
+    color: #888;
+    padding: 15px;
+    text-decoration: none;
+}
+.down_content th{
+    width: 210px;
+}
+
+.down:hover .down_content {
+    display: block;
+}
+
+
+#login{
+    display: inline-block;
+    margin:35px;
+    color: white;
+}
+#login li{
+    padding-left:40px;
+    list-style-type: none;
+    display: inline;
+    color: #ffffff;
+}
+#day li{
+	display: inline-block;
+	margin:70px;
+	font-size: 25px;
+	float: center;
+}
+#day ul{
+	white-space: nowrap;
+	font-size: 35px;
+}
+#list li{
+    display: inline-block;
+    margin: 40px;
+
+}
+#list ul{
+    background-color: black;
+    white-space: nowrap;
+    margin top: 20px 
+}
+#info ul{
+    white-space: nowrap;
+    margin top: 20px;
+}
+#info li{
+    display: inline-block;
+    margin: 20px;
+}
+footer{ 
+  left:0px; 
+  bottom:0px; 
+  height:200px; 
+  width:100%; 
+  color: black;
+}
+*{margin:0;padding:0;}
+    ul,li{list-style:none;}
+    .slide{ height:775px;overflow:hidden;}
+    .slide ul{position:relative;height:54%;}
+    .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;animation:fade 8s infinite;}
+    .slide li:nth-child(1){background-image:url(inthe2.jpg);animation-delay:0s}
+    .slide li:nth-child(2){background-image:url(luka2.jpg);animation-delay:2s}
+    .slide li:nth-child(3){background-image:url(kill2.jpg);animation-delay:4s}
+    .slide li:nth-child(4){background-image:url(cash2.jpg);animation-delay:6s}
+    @keyframes fade {
+      0% {opacity:0;}
+      5% {opacity:1;}
+      25% {opacity:1;}
+      30% {opacity:0;}
+      100% {opacity:0;}
+    }
+.btn { display:block; width:100px; height:100px; line-height:40px; margin:15px auto; background-color:gray; text-align:center; cursor: pointer; color:#fff;} 
+.btn:hover{color:#fff;}
+.hover1:hover{ box-shadow:200px 0 0 0 rgba(0,0,0,0.5) inset; }
+</style>
+</head>
+<body>
+    <center>
+        <header>            
+             <a id=logo href='index.html' style="float: center; margin: 70px;"><img src='cinema.png' width=12% height=40px></a>
+            <!--다운-->
+            <nav class="down" style="float: center;">
+                
+                <div class="menu">영화</div>
+                <div class="menu">예매</div>                
+                <div class="menu">이벤트</div>
+                <div class="down_content">
+                    <table border=0>
+                    <top>
+                        <tr>
+                            <th><a href='moviechat.html'>무비차트</a></th>
+                            <th><a href='gimpo.html' target="section">예매하기</a></th>
+                            <th><a href='event.html' target="section">이벤트</a></th>
+                            <th></th>
+                            
+                        </tr>
+
+                        <tr>
+                            <th><a href='12212.html' target="section">기정's 무비 픽</a></th>
+                            <th></th>                           </tr>
+                        
+                        
+                    </top>
+                    </table>
+                </div>
+            </nav>
+
+
+             <ul id=login>
+                <div class="dropdown">
+        <ul>
+            <div class="dropdownContents">
+                <li style="color: black; margin-right: 80px;"><strong>MY PAGE</strong></li>      </div>
+        </ul>
+    </div>
+    
+            </ul>  
+        </header>
+ <!--슬라이드-->
+ <div class="slide">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  <h3 style="margin-top: 60px; float: center;">기정시네마 김포공항</h3><br>
+  <h4>
+	● 총 상영관 수 10개관 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● 총 좌석 수 2,000석
+	</h4><br>
+	 <h4>
+	 	- 서울 강서구 하늘길 지하 77
+	 </h4>
+	 <h5><img src="sub.png"><span>대중교통 안내</span></h5>
+       	
+       <h5>
+       	    <img src="car.png">
+       		<span>자가용/주차안내</span></h5>  
+      <h5>
+             <img src="loc.png">
+       		<span>지도보기</span>
+       </h5>
+  </div>        
+          
+           <hr width = "80%" color = "gray">              
+             <h1 style="float: left; margin-left: 300px; margin-top :50px; text-align: left">크루엘라</h1> <button class="btn hover1" style="float: left;  margin-left: 200px;">6관 20:50 </button><button class="btn hover1" style="float: left; margin-left: 100px;">3관 12:50 </button><button class="btn hover1" style="float: left; margin-left: 100px;">4관 15:00 </button><br><br><br><br><br><br>
+            <hr width = "80%" color = "gray">
+           
+                     
+             <h1 style="float: left; margin-left: 300px; margin-top :50px; text-align: left">분노의 질주</h1> <button class="btn hover1" style="float: left; margin-left: 175px;">1관 12:50 </button><button class="btn hover1" style="float: left; margin-left: 100px;"> 2관 18:50 </button><button class="btn hover1" style="float: left; margin-left: 100px;">3관 11:10 </button><button class="btn hover1" style="float: left; margin-left: 100px;">4관 19:50 </button>
+             <br><br><br><br><br><br>
+            <hr width = "80%" color = "gray">
+
+            <h1 style="float: left; margin-left: 300px; margin-top :50px; text-align: left">캐시트럭</h1> <button class="btn hover1" style="float: left;  margin-left: 200px;">1관 11:20 </button><button class="btn hover1" style="float: left; margin-left: 100px;"> 10관 22:50 </button><br><br><br><br><br><br>
+            <hr width = "80%" color = "gray">
+
+            <h1 style="float: left; margin-left: 320px; margin-top :50px; text-align: left">낫아웃</h1> <button class="btn hover1" style="float: left;  margin-left: 200px;">5관 17:30 </button><button class="btn hover1" style="float: left; margin-left: 100px;">8관 19:50 </button><br><br><br><br><br><br>
+            <hr width = "80%" color = "gray">
+    </center>
+</body>
+ <br>
+    <br>
+
+</html>

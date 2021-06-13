@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>  
+    <style>
+
+
+ .clear{
+    clear:both;
+}
+#logo{
+    margin: 50px;
+}
+
+.menu{
+    width:100px;
+    margin: 50px 45px 15px 45px;
+    padding: 10px;
+    display: inline-block;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.down{
+    position: relative;
+    display: inline-block;
+}
+
+.down_content{
+    width:3000px;
+    height:120px;   
+    display: none;
+    z-index: 10;
+    background-color: #ffffff;   
+    position: absolute;
+    left: -1070px;
+}
+
+.down_content a{
+    display: block;
+    color: #888;
+    padding: 15px;
+    text-decoration: none;
+}
+.down_content th{
+    width: 210px;
+}
+
+.down:hover .down_content {
+    display: block;
+}
+body{
+    background-image: url("bg.jpg");
+    background-size: 1900px;
+}
+
+#login{
+    display: inline-block;
+    margin:35px;
+}
+#login li{
+    padding-left:40px;
+    list-style-type: none;
+    display: inline;
+    color: #ffffff;
+}
+#list li{
+    display: inline-block;
+    margin: 50px;
+    float: center;
+}
+
+#list ul{
+    white-space: nowrap;
+    margin top: 20px ;
+    float:center;
+}
+h4{
+    font-size: 25px;
+    text-align: left;
+    color: white;
+
+}
+h3{
+    display: inline-block;
+    position: relative;
+    height: inherit;
+    font-weight: 500;
+    font-size: 36px;
+    text-align: left;
+    vertical-align: middle;
+    color: white
+}
+h2{
+    float: center;
+    text-align: center;
+    color: white;
+}
+h1{
+    text-align: center;
+    color:white;
+    font-size: 18px;
+}
+
+
+</style>
+</head>
+<body>
+    <center>
+        <header>            
+             <a id=logo href='index.html' style="float: center; margin: 70px;"><img src='cinema2.png' width=12% height=40px></a>
+            <!--다운-->
+            <nav class="down" style="float: center;">
+                
+                <div class="menu">영화</div>
+                <div class="menu">예매</div>                
+                <div class="menu">이벤트</div>
+                <div class="down_content">
+                    <table border=0>
+                    <top>
+                        <tr>
+                            <th><a href='moviechat.html'>무비차트</a></th>
+                            <th><a href='gimpo.html' target="section">예매하기</a></th>
+                            <th><a href='event.html' target="section">이벤트</a></th>
+                            <th></th>
+                            
+                        </tr>
+
+                        <tr>
+                            <th><a href='moviepick.html' target="section">기정's 무비 픽</a></th>
+                            <th></th>                           </tr>
+                        
+                        
+                    </top>
+                    </table>
+                </div>
+            </nav>
+
+
+            <ul id=login>
+                <div class="dropdown">
+        <ul><a href="title07.html" >
+            <div class="dropdownContents">
+                <li class="TCH">로그인</li>
+                <li class="TCH">회원가입</li>
+            </div>
+        </a></ul>
+    </div>
+    
+            </ul>   
+        </header> 
+        <h3>기정'S MOVIE PICK</h3>  <br>
+        <h3>ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ</h3> <br>
+        <h3>범죄 영화</h3>
+        <ul id=list>    
+            <li id=list>            
+            <img src="daman.jpg" >
+            <h2>다만 악에서 구하소서</h2>
+            <h1>멈출 수 없는 두 남자의</h1> 
+            <h1>지독한 추격이 시작된다!</h1>
+            <h1>2021.06.09 개봉</h1>
+            </li>
+
+            <li id=list>   
+            <img src="dok.jpg" >
+            <h2>독전</h2>
+            <h1>아시아 최대 마약 조직,</h1>
+            <h1>실체 없는 적을 추적하라!</h1>
+            <h1>2018.05.22 개봉</h1>
+            </li>
+
+            <li id=list>   
+            <img src="bum.jpg" >
+            <h2>범죄와의 전쟁</h2>
+            <h1>"학생은 공부를 해야 학생이고, </h1>
+            <h1>건달은 싸워야할 때 싸워야 건달입니다"</h1>
+            <h1>2012.02.02 개봉</h1>
+            </li>
+
+            <li id=list2>   
+            <img src="joker.jpg" >
+            <h2>조커</h2>
+            <h1>"내 인생이 비극인줄 알았는데,</h1>
+             <h1>코미디였어"</h1>
+            <h1>2019.10.12 개봉</h1>
+            </li>
+        </ul>
+             <h3>ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ</h3> <br>
+        <h3>드라마 영화</h3>
+        <ul id=list>
+            <li id=list>            
+            <img src="giseng.jpg" >
+            <h2>기생충</h2>
+            <h1>"가장 완벽한 계획이 뭔지 알아?</h1>
+             <h1>무계획이야."</h1>
+            <h1>2019.05.30 개봉</h1> 
+            </li>
+
+            <li id=list>   
+            <img src="stone1.png" >
+            <h2>크루엘라</h2>
+            <h1>"잘 가, </h1>
+            <h1>에스텔라"</h1>
+            <h1>2021.05.26 개봉</h1> 
+            </li>
+
+            <li id=list>   
+            <img src="jasan.jpg" >
+            <h2>자산어보</h2>
+            <h1>"벗을 깊이 알면 </h1>
+             <h1>내가 더 깊어진다"</h1>
+            <h1>2021.03.31 개봉</h1> 
+            </li>
+
+            <li id=list>   
+            <img src="sul.jpg" >
+            <h2>슬럼독 밀리어네어</h2>
+            <h1>전 세계를 감동시킨 </h1>
+             <h1>특별한 퀴즈쇼!</h1>
+            <h1>2009.03.19 개봉</h1> 
+            </li>
+        </ul>
+
+            </ul>
+             <h3>ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ</h3> <br>
+        <h3>판타지 영화</h3>
+        <ul id=list>
+            <li id=list>            
+            <img src="ring.jpg" >
+            <h2>반지의 제왕</h2>
+            <h1>"가장 중요한 것은</h1>
+            <h1>주어진 시간에 무엇을 하느냐이다"</h1>
+            <h1>2001.12.31 개봉</h1> 
+            </li>
+
+            <li id=list>   
+            <img src="god.jpg" >
+            <h2>신과함께</h2>
+            <h1>"이승에 사는 사람중 소수만이 </h1>
+            <h1>자신의 잘못에 대한 용서를 빈다."</h1>
+            <h1>2017.12.20 개봉</h1> 
+            </li>
+
+            <li id=list>   
+            <img src="ala.jpg" >
+            <h2>알라딘</h2>
+            <h1>"침묵하지 않아.</h1>
+             <h1>절대로."</h1>
+            <h1>2019.05.23 개봉</h1> 
+            </li>
+
+            <li id=list>   
+            <img src="hun.jpg" >
+            <h2>헝거게임</h2>
+            <h1>"제 76번째 헝거게임에 오신것을  </h1>
+            <h1>환영합니다!"</h1>
+            <h1>2012.04.05 개봉</h1> 
+            </li>
+        </ul>
+
+             <h3>ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ</h3> <br>
+        <h3>음악 영화</h3>
+        <ul id=list>
+            <li id=list>            
+            <img src="bohe.jpg" >
+            <h2>보헤미안 랩소디</h2>
+            <h1>“나는 스타가 되지 않을 것이다,</h1>
+            <h1>전설이 될 것이다”</h1>
+            <h1>2018.10.31 개봉</h1> 
+            </li>
+
+            <li id=list>   
+            <img src="show.jpg" >
+            <h2>위대한 쇼맨</h2>
+            <h1>"불가능한 꿈, </h1>
+            <h1>그 이상의 쇼!"</h1>
+            <h1>2017.12.20 개봉</h1> 
+            </li>
+
+            <li id=list>   
+            <img src="yes.jpg" >
+            <h2>예스터데이</h2>
+            <h1>"인생을 바꿀 수 있는 선택의 순간이 </h1>
+             <h1>당신에게도 찾아온다면?"</h1>
+            <h1>2019.09.18 개봉</h1> 
+            </li>
+
+            <li id=list>   
+            <img src="we.jpg" >
+            <h2>위플래쉬</h2>
+            <h1>"박자가 안 맞잖아,</h1>
+            <h1>다시!"</h1>
+            <h1>2015.03.12 개봉</h1> 
+            </li>
+        </ul>
+    </center>
+ 
+   
+
+</body>
+ <br>
+    <br>
+
+</html>
